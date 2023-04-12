@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exemplo de Tela com Display</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .coluna {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .coluna-esquerda {
+            background-color: #f1f1f1;
+        }
+
+        .coluna-direita {
+            background-color: #ddd;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .coluna {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="coluna coluna-esquerda">
+            <h2>Display: Position</h2>
+            <p>A propriedade display em CSS determina como um elemento HTML deve ser exibido na página. A propriedade
+                position é usada em conjunto com a propriedade display para definir como um elemento deve ser
+                posicionado em relação ao seu contêiner pai.
+                Existem quatro valores possíveis para a propriedade position
+            </p>
+        </div>
+        <div class="coluna coluna-direita">
+            <h2>Static</h2>
+            <ul>
+                <li>Static: esse é o valor padrão e significa que o elemento será exibido em sua posição normal,
+                    seguindo o fluxo normal do documento. A propriedade top, bottom, left e right não têm efeito em
+                    elementos com valor static.
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
